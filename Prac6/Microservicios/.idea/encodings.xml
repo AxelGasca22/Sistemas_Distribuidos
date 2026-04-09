@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ApiGateway/ApiGateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ClientSimulator/ClientSimulator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FailureService/FailureService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MetricService/MetricService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RegistryService/RegistryService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ScalingService/ScalingService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/eureka-server/src/main/java" charset="UTF-8" />
+  </component>
+</project>
