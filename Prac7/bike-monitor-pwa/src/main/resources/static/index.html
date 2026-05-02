@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BikeStation Monitor PWA</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111827">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<header class="app-header">
+    <div>
+        <h1>BikeStation Monitor</h1>
+        <p>Monitoreo distribuido de estaciones de bicicletas</p>
+    </div>
+
+    <div class="header-actions">
+        <span id="connectionStatus" class="status-online">Online</span>
+        <button id="installButton" class="install-button" hidden>Instalar app</button>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="summary-grid">
+        <div class="summary-card">
+            <h2 id="totalStations">0</h2>
+            <p>Estaciones totales</p>
+        </div>
+
+        <div class="summary-card">
+            <h2 id="availableStations">0</h2>
+            <p>Disponibles</p>
+        </div>
+
+        <div class="summary-card">
+            <h2 id="lowStations">0</h2>
+            <p>Bajas</p>
+        </div>
+
+        <div class="summary-card">
+            <h2 id="emptyStations">0</h2>
+            <p>Vacías</p>
+        </div>
+
+        <div class="summary-card">
+            <h2 id="offlineStations">0</h2>
+            <p>Offline</p>
+        </div>
+
+        <div class="summary-card">
+            <h2 id="totalAvailableBikes">0</h2>
+            <p>Bicicletas disponibles</p>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-header">
+            <div>
+                <h2>Estaciones registradas</h2>
+                <p>Actualización automática desde el backend Spring Boot</p>
+            </div>
+
+            <button id="refreshButton">Actualizar</button>
+        </div>
+
+        <div id="stationsContainer" class="stations-grid">
+            <!-- Aquí se renderizan las estaciones -->
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>Práctica PWA - Sistemas Distribuidos</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
